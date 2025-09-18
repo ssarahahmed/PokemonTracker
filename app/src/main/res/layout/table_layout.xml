@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TableRow>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_span="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_new_catch"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_span="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Poke_tracker"
+                android:textSize="34sp"/>
+        </TableRow>
+
+        <!-- National Number -->
+        <TableRow>
+            <TextView android:id="@+id/NN" android:text="@string/National_Number"/>
+            <EditText android:id="@+id/NationalNumber"
+                android:layout_width="match_parent"
+                android:autofillHints=""
+                android:hint="@string/_896"
+                android:inputType="number"/>
+        </TableRow>
+
+        <!-- Name -->
+        <TableRow>
+            <TextView android:id="@+id/N" android:text="@string/Name"/>
+            <EditText android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:autofillHints=""
+                android:hint="@string/glastrier"
+                android:inputType="text|textCapWords"/>
+        </TableRow>
+
+        <!-- Species -->
+        <TableRow>
+            <TextView android:id="@+id/S" android:text="@string/Specie"/>
+            <EditText android:id="@+id/Species"
+                android:layout_width="match_parent"
+                android:autofillHints=""
+                android:hint="@string/wild_horse_pok_mon"
+                android:inputType="text"/>
+        </TableRow>
+
+        <!-- Height -->
+        <TableRow>
+            <TextView android:id="@+id/H" android:text="@string/height_m"/>
+            <EditText android:id="@+id/Height"
+                android:layout_width="match_parent"
+                android:autofillHints=""
+                android:hint="@string/_2_2"
+                android:inputType="numberDecimal"/>
+        </TableRow>
+
+        <!-- Weight -->
+        <TableRow>
+            <TextView android:id="@+id/W" android:text="@string/weight_k"/>
+            <EditText android:id="@+id/Weight"
+                android:layout_width="match_parent"
+                android:autofillHints=""
+                android:hint="@string/_800_0"
+                android:inputType="numberDecimal"/>
+        </TableRow>
+
+        <!-- Gender -->
+        <TableRow>
+            <TextView android:id="@+id/G" android:text="@string/Gender"/>
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton android:id="@+id/radioButton" android:text="@string/f"
+                    android:layout_height="60dp"
+                    android:layout_width="115dp" />
+                <RadioButton android:id="@+id/radioButton4" android:text="@string/M" android:layout_height="62dp" android:layout_width="97dp"/>
+                <RadioButton android:id="@+id/radioButton3" android:text="@string/U" android:layout_height="60dp" android:layout_width="80dp"/>
+            </RadioGroup>
+        </TableRow>
+
+        <!-- Level -->
+        <TableRow>
+            <TextView android:id="@+id/L" android:text="@string/Level"/>
+            <Spinner android:id="@+id/spinner" android:layout_width="match_parent"/>
+        </TableRow>
+
+        <!-- Base stats -->
+        <TableRow>
+            <TextView android:id="@+id/textView12" android:text="@string/base_stat"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:id="@+id/Hpt" android:text="@string/hp"/>
+            <EditText android:id="@+id/HP"
+                android:autofillHints=""
+                android:hint="@string/_0" android:inputType="number"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:id="@+id/ATT" android:text="@string/Attack"/>
+            <EditText android:id="@+id/Attack"
+                android:autofillHints=""
+                android:hint="@string/_0" android:inputType="number"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:id="@+id/Def" android:text="@string/Defense"/>
+            <EditText android:id="@+id/Defense"
+                android:autofillHints=""
+                android:hint="@string/__0" android:inputType="number"/>
+        </TableRow>
+
+        <!-- Buttons -->
+        <TableRow style="?android:attr/buttonBarStyle">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Reset" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="214dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Save" />
+
+            <Button
+            android:id="@+id/toggleLayoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/switch_layout"
+            tools:ignore="MissingConstraints" />
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>

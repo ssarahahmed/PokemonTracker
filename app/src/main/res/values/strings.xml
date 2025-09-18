@@ -8,4 +8,54 @@
         ...
         <item>50</item>
     </string-array>
+
+        <string name="height">Height(m)</string>
+        <string name="weight">Weight(kg)</string>
+        <string name="save">Save</string>
+        <string name="reset">Reset</string>
+        <string name="gender">Gender</string>
+        <string name="poke_tracker">Poke-Tracker</string>
+        <string name="register_catch">Register new catch</string>
+        <string name="base_stats">Base Stats</string>
+        <string name="attack">Attack</string>
+        <string name="defense">Defense</string>
+        <string name="level">Level</string>
+        <string name="national_number">National Number</string>
+        <string name="name">Name</string>
+        <string name="species">Species</string>
+        <string name="female">Female</string>
+        <string name="male">Male</string>
+        <string name="unk">Unk</string>
+    <string name="_2_2">2.2</string>
+    <string name="_896">896</string>
+    <string name="wild_horse_pok_mon">Wild Horse Pokémon</string>
+    <string name="height_m">Height(m)</string>
+    <string name="f">Female</string>
+    <string name="M">Male</string>
+    <string name="U">Unk</string>
+    <string name="NN">National Number</string>
+    <string name="Name">Name</string>
+    <string name="NationalNumber" />
+    <string name="glastrier">Glastrier</string>
+    <string name="Specie">Species</string>
+    <string name="Poke_tracker">Poke-Tracker</string>
+    <string name="Gender">Gender</string>
+    <string name="register_new_catch">Register new catch</string>
+    <string name="_800_0">800.0</string>
+    <string name="base_stat">Base Stats</string>
+    <string name="_0">0</string>
+    <string name="Attack">Attack</string>
+    <string name="_0_">0</string>
+    <string name="Level">Level</string>
+    <string name="Defense">Defense</string>
+    <string name="weight_k">Weight(k)</string>
+    <string name="__0">0</string>
+    <string name="hp">HP</string>
+    <string name="Reset">Reset</string>
+    <string name="Save">Save</string>
+    <string name="Mational_number">National Number</string>
+    <string name="National_number">\nNational_Number\n</string>
+    <string name="National_Number">National Number</string>
+    <string name="switch_layout">Switch Layout</string>
+
 </resources>
