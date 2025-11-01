@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     xmlns:tools="http://schemas.android.com/tools">
 
     <TableLayout
@@ -9,10 +10,9 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
-        <!-- Title -->
         <TableRow>
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/subHeader"
                 android:layout_span="2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
 
         <TableRow>
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/appHeader"
                 android:layout_span="2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -31,115 +31,106 @@
                 android:textSize="34sp"/>
         </TableRow>
 
-        <!-- National Number -->
         <TableRow>
-            <TextView android:id="@+id/NN" android:text="@string/National_Number"/>
-            <EditText android:id="@+id/NationalNumber"
+            <TextView android:id="@+id/nationalLabel" android:text="@string/National_Number"/>
+            <EditText android:id="@+id/nationalNumber"
                 android:layout_width="match_parent"
                 android:autofillHints=""
                 android:hint="@string/_896"
                 android:inputType="number"/>
         </TableRow>
 
-        <!-- Name -->
         <TableRow>
-            <TextView android:id="@+id/N" android:text="@string/Name"/>
-            <EditText android:id="@+id/Name"
+            <TextView android:id="@+id/nameLabel" android:text="@string/Name"/>
+            <EditText android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:autofillHints=""
                 android:hint="@string/glastrier"
                 android:inputType="text|textCapWords"/>
         </TableRow>
 
-        <!-- Species -->
         <TableRow>
-            <TextView android:id="@+id/S" android:text="@string/Specie"/>
-            <EditText android:id="@+id/Species"
+            <TextView android:id="@+id/speciesLabel" android:text="@string/Specie"/>
+            <EditText android:id="@+id/species"
                 android:layout_width="match_parent"
                 android:autofillHints=""
                 android:hint="@string/wild_horse_pok_mon"
                 android:inputType="text"/>
         </TableRow>
 
-        <!-- Height -->
         <TableRow>
-            <TextView android:id="@+id/H" android:text="@string/height_m"/>
-            <EditText android:id="@+id/Height"
+            <TextView android:id="@+id/heightLabel" android:text="@string/height_m"/>
+            <EditText android:id="@+id/height"
                 android:layout_width="match_parent"
                 android:autofillHints=""
                 android:hint="@string/_2_2"
                 android:inputType="numberDecimal"/>
         </TableRow>
 
-        <!-- Weight -->
         <TableRow>
-            <TextView android:id="@+id/W" android:text="@string/weight_k"/>
-            <EditText android:id="@+id/Weight"
+            <TextView android:id="@+id/weightLabel" android:text="@string/weight_k"/>
+            <EditText android:id="@+id/weight"
                 android:layout_width="match_parent"
                 android:autofillHints=""
                 android:hint="@string/_800_0"
                 android:inputType="numberDecimal"/>
         </TableRow>
 
-        <!-- Gender -->
         <TableRow>
-            <TextView android:id="@+id/G" android:text="@string/Gender"/>
+            <TextView android:id="@+id/genderLabel" android:text="@string/Gender"/>
             <RadioGroup
-                android:id="@+id/radioGroup"
+                android:id="@+id/genderGroup"
                 android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-                <RadioButton android:id="@+id/radioButton" android:text="@string/f"
+                <RadioButton android:id="@+id/female" android:text="@string/f"
                     android:layout_height="60dp"
                     android:layout_width="115dp" />
-                <RadioButton android:id="@+id/radioButton4" android:text="@string/M" android:layout_height="62dp" android:layout_width="97dp"/>
-                <RadioButton android:id="@+id/radioButton3" android:text="@string/U" android:layout_height="60dp" android:layout_width="80dp"/>
+                <RadioButton android:id="@+id/male" android:text="@string/M" android:layout_height="62dp" android:layout_width="97dp"/>
+                <RadioButton android:id="@+id/unknown" android:text="@string/U" android:layout_height="60dp" android:layout_width="80dp"/>
             </RadioGroup>
         </TableRow>
 
-        <!-- Level -->
         <TableRow>
-            <TextView android:id="@+id/L" android:text="@string/Level"/>
-            <Spinner android:id="@+id/spinner" android:layout_width="match_parent"/>
+            <TextView android:id="@+id/levelLabel" android:text="@string/Level"/>
+            <Spinner android:id="@+id/levelSpinner" android:layout_width="match_parent"/>
         </TableRow>
 
-        <!-- Base stats -->
         <TableRow>
             <TextView android:id="@+id/textView12" android:text="@string/base_stat"/>
         </TableRow>
 
         <TableRow>
-            <TextView android:id="@+id/Hpt" android:text="@string/hp"/>
-            <EditText android:id="@+id/HP"
+            <TextView android:id="@+id/hpLabel" android:text="@string/hp"/>
+            <EditText android:id="@+id/hp"
                 android:autofillHints=""
                 android:hint="@string/_0" android:inputType="number"/>
         </TableRow>
 
         <TableRow>
-            <TextView android:id="@+id/ATT" android:text="@string/Attack"/>
-            <EditText android:id="@+id/Attack"
+            <TextView android:id="@+id/attackLabel" android:text="@string/Attack"/>
+            <EditText android:id="@+id/attack"
                 android:autofillHints=""
                 android:hint="@string/_0" android:inputType="number"/>
         </TableRow>
 
         <TableRow>
-            <TextView android:id="@+id/Def" android:text="@string/Defense"/>
-            <EditText android:id="@+id/Defense"
+            <TextView android:id="@+id/defenseLabel" android:text="@string/Defense"/>
+            <EditText android:id="@+id/defense"
                 android:autofillHints=""
                 android:hint="@string/__0" android:inputType="number"/>
         </TableRow>
 
-        <!-- Buttons -->
         <TableRow style="?android:attr/buttonBarStyle">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/resetButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Reset" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/saveButton"
                 android:layout_width="214dp"
                 android:layout_height="wrap_content"
                 android:text="@string/Save" />

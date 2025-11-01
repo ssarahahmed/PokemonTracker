@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:fillViewport="true">
 
     <LinearLayout
@@ -12,7 +13,7 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/subHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/register_new_catch"
@@ -21,7 +22,7 @@
             android:layout_gravity="center_horizontal"/>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/appHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Poke_tracker"
@@ -29,7 +30,6 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"/>
 
-        <!-- National Number -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,14 +37,14 @@
             android:layout_marginTop="16dp">
 
             <TextView
-                android:id="@+id/NN"
+                android:id="@+id/nationalLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/National_number"
                 android:layout_gravity="center_vertical"/>
 
             <EditText
-                android:id="@+id/NationalNumber"
+                android:id="@+id/nationalNumber"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -54,7 +54,6 @@
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
 
-        <!-- Name -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,14 +61,14 @@
             android:layout_marginTop="8dp">
 
             <TextView
-                android:id="@+id/N"
+                android:id="@+id/nameLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Name"
                 android:layout_gravity="center_vertical"/>
 
             <EditText
-                android:id="@+id/Name"
+                android:id="@+id/name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -79,7 +78,6 @@
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
 
-        <!-- Species -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -87,14 +85,14 @@
             android:layout_marginTop="8dp">
 
             <TextView
-                android:id="@+id/S"
+                android:id="@+id/speciesLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Specie"
                 android:layout_gravity="center_vertical"/>
 
             <EditText
-                android:id="@+id/Species"
+                android:id="@+id/species"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -104,7 +102,6 @@
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
 
-        <!-- Height & Weight -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -112,14 +109,14 @@
             android:layout_marginTop="8dp">
 
             <TextView
-                android:id="@+id/H"
+                android:id="@+id/heightLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/height_m"
                 android:layout_gravity="center_vertical"/>
 
             <EditText
-                android:id="@+id/Height"
+                android:id="@+id/height"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -136,14 +133,14 @@
             android:layout_marginTop="8dp">
 
             <TextView
-                android:id="@+id/W"
+                android:id="@+id/weightLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/weight_k"
                 android:layout_gravity="center_vertical"/>
 
             <EditText
-                android:id="@+id/Weight"
+                android:id="@+id/weight"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -153,7 +150,6 @@
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
 
-        <!-- Gender -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -168,33 +164,32 @@
                 android:layout_gravity="center_vertical"/>
 
             <RadioGroup
-                android:id="@+id/radioGroup"
+                android:id="@+id/genderGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginStart="8dp">
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/female"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/f" />
 
                 <RadioButton
-                    android:id="@+id/radioButton4"
+                    android:id="@+id/male"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/M" />
+                    android:text="Male" />
 
                 <RadioButton
-                    android:id="@+id/radioButton3"
+                    android:id="@+id/unknown"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/U" />
             </RadioGroup>
         </LinearLayout>
 
-        <!-- Level -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -202,21 +197,20 @@
             android:layout_marginTop="8dp">
 
             <TextView
-                android:id="@+id/L"
+                android:id="@+id/levelLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Level"
                 android:layout_gravity="center_vertical"/>
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/levelSpinner"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
 
-        <!-- Base Stats -->
         <TextView
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
@@ -226,21 +220,20 @@
             android:textStyle="bold"
             android:layout_marginTop="16dp"/>
 
-        <!-- HP -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/Hpt"
+                android:id="@+id/hpLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/hp"
                 android:layout_gravity="center_vertical"/>
 
             <EditText
-                android:id="@+id/HP"
+                android:id="@+id/hp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -250,21 +243,20 @@
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
 
-        <!-- Attack -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/ATT"
+                android:id="@+id/attackLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Attack"
                 android:layout_gravity="center_vertical"/>
 
             <EditText
-                android:id="@+id/Attack"
+                android:id="@+id/attack"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -274,21 +266,20 @@
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
 
-        <!-- Defense -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/Def"
+                android:id="@+id/defenseLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Defense"
                 android:layout_gravity="center_vertical"/>
 
             <EditText
-                android:id="@+id/Defense"
+                android:id="@+id/defense"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -298,7 +289,6 @@
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
 
-        <!-- Buttons -->
         <LinearLayout
             style="?android:attr/buttonBarStyle"
             android:layout_width="match_parent"
@@ -308,14 +298,14 @@
             android:layout_marginTop="16dp">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/resetButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Reset"
                 tools:ignore="ButtonStyle" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/saveButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
